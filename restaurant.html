@@ -14,7 +14,7 @@
     />
     
     <script type="module" crossorigin src="/project-group-2/assets/main-ec808ebb.js"></script>
-    <link rel="stylesheet" href="/project-group-2/assets/main-9bffbe17.css">
+    <link rel="stylesheet" href="/project-group-2/assets/main-2273ca43.css">
   </head>
   <body>
     <a href="./hotel.html">1</a>
@@ -139,31 +139,67 @@
   </div>
 </section>
 
-      <section class="section-restuarant">
-    <h2>About our kitchen</h2>
-    <p>Amet minim mollit non</p>
-    <a href="">MIMIHO</a>
-    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        <div>
-            <img src="../../img/restaurant/about-1.jpg" alt="about-1" width="293px" height="322px">
+      <section class="section-restuarant ">
+    <div class="container">
+    <h2 class="visually-hiden">About our kitchen</h2>
+    <div class="thumb-kitchen-second">
+        <p class="p-kitchen-one">Amet minim mollit non</p>
+    <p class="logo-kitchen">MIMIHO</p>
+    <p class="p-kitchen-second">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+    </div>
+        <div class="image-kitchen-first">
+            <picture>
+                <source  srcset="../../img/restaurant/about-1-2x.jpg 1x, ../../img/restaurant/about-1.jpg 2x" media="(min-width:1280px)">
+                <source  srcset="../../img/restaurant/about-1-tab-2x.jpg 1x, ../../img/restaurant/about-1-tab.jpg 2x" media="(min-width:1024px)">
+                <source srcset="../../img/restaurant/about-1-mob-2x.jpg 2x" media="(min-width:320px)">
+                <img src="../../img/restaurant/about-1-mob.jpg"  alt="about-1" class="image-item-first" >
+            </picture>
         </div>
-        <div>
-            <div>
-                <img src="../../img/restaurant/about-2.jpg" alt="about-2" width=" 200px" height="278px">
-            </div>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <div class="thumb-kitchen-one">
+                <div>
+                    <picture>
+                        <source srcset="../../img/restaurant/about-2.jpg 1x, ../../img/restaurant/about-2-2x.jpg 2x" media="(min-width:1280px)">
+                        <source srcset="../../img/restaurant/about-2-tab.jpg 1x, ../../img/restaurant/about-2-tab-2x.jpg 2x" media="(min-width:1024px)">
+                        <source srcset="../../img/restaurant/about-2-mob-2x.jpg 2x" media="(min-width:320px)">
+                        <img src="../../img/restaurant/about-2-mob.jpg" alt="about-2" class="image-kitchen-second">
+                    </picture>
+                </div>
+            <p class="p-kitchen-three">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
-    <ul>
-        <li><img src="../../img/restaurant/about-3.jpg" alt="about-3" width="245px" height="245px"></li>
-        <li><img src="../../img/restaurant/about-4.jpg" alt="about-4" width="24px" height="245px"></li>
+    <ul class="slider-kitchen ">
+        <li class="image-kithcen-3">
+            <picture>
+                <source srcset="../../img/restaurant/about-3.jpg 1x, ../../img/restaurant/about-3-2x.jpg 2x" media="(min-width:1280px)">
+                <source srcset="../../img/restaurant/about-3-tab.jpg 1x, ../../img/restaurant/about-3-tab-2x.jpg 2x" media="(min-width:1024px)">
+                <source srcset="../../img/restaurant/about-3-mob-2x.jpg 2x"  media="(min-width:320px)">
+                <img src="../../img/restaurant/about-3-mob.jpg " alt="about-3" class="image-kitchen-item-3">
+            </picture>
+        </li>
+     
+            <li class="image-kitchen-4">
+                <div class="image-kitchen-box-4">
+                    <picture>
+                        <source srcset="../../img/restaurant/about-4.jpg 1x, ../../img/restaurant/about-4-2x.jpg 2x" media="(min-width:1280px)">
+                        <source srcset="../../img/restaurant/about-4-tab.jpg 1x, ../../img/restaurant/about-4-tab-2x.jpg 2x" media="(min-width:1024px)">
+                        <source srcset="../../img/restaurant/about-4-tab-2x.jpg 2x" media="(min-width:320px)">
+                    <img src="../../img/restaurant/about-4.jpg" alt="about-4" class="image-kitchen-item-4" >
+                    </picture>  
+                </div>
+            </li>
+     
     </ul>
-    <svg width="150px" hegiht="150px">
-          <use href="/project-group-2/assets/favicon-ded209dd.svg#icon-arrow-left" ></use>
-    </svg>
-    <svg width="150px" hegiht="150px">  
-          <use href="/project-group-2/assets/favicon-ded209dd.svg#icon-arrow-right"></use>
-    </svg>
+       <div class="svg-arrows-kitchen ">
+        <svg width="32px" height="32px" class="svg-arrow-one">
+            <use href="/project-group-2/assets/favicon-ded209dd.svg#icon-arrow-left" ></use>
+        </svg>
+        <svg width="32px" height="32px" class="svg-arrow-two">  
+            <use href="/project-group-2/assets/favicon-ded209dd.svg#icon-arrow-right"></use>
+        </svg>
+       </div>
+    </div>
 </section>
+
+
       <!--Restaurant Page-->
 <!--Section Menu-->
 <section class="menu">
