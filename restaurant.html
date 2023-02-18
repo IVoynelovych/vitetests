@@ -14,12 +14,13 @@
     />
     
     <script type="module" crossorigin src="/project-group-2/assets/main-ec808ebb.js"></script>
-    <link rel="stylesheet" href="/project-group-2/assets/main-9c8a68cc.css">
+    <link rel="stylesheet" href="/project-group-2/assets/main-883938fd.css">
   </head>
   <body>
-    <a href="./hotel.html">1</a>
-    <a href="./index.html">4</a>
-    <a href="./room.html">3</a>
+    <a href="./hotel.html">hotel</a>
+    <a href="./restaurant.html">restaurant</a>
+    <a href="./room.html">room</a>
+    <a href="./index.html">main</a>
     <!-- Loads the specified .html file -->
     <header class="header container">
   <div class="header-wrap">
@@ -95,371 +96,47 @@
 </header>
 
     <main>
-      <section class="restaurant-hero">
-  <div class="restaurant-container">
-    <h1 class="hero-title">MIMIHO</h1>
-    <h2 class="restaurant-hero-subheading">Ресторан</h2>
-    <p class="restaurant-hero-motto">СМАК ЖИТТЯ 24/7</p>
-    <ul class="hero-btn-list">
-      <li>
-        <button type="button" class="hero-btn">Забронювати столик</button>
-      </li>
-      <li><button type="button" class="hero-btn">Переглянути меню</button></li>
-    </ul>
-    <div class="hero-location">
-      <svg width="20" height="20" class="hero-loc-icon">
-        <use href="../../public/favicon.svg#icon-location"></use>
-      </svg>
-      <a href="" class="hero-address">
-        Україна, м. Полтава,<br />вул. Маршала Бірюзова, 15</a
-      >
-    </div>
-    <ul class="hero-soc-list">
-      <li class="hero-soc-list-item">
-        <a href="">
-          <svg class="hero-soc-icons" width="24" height="24">
-            <use href="../../public/favicon.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="hero-soc-list-item">
-        <a href="">
-          <svg class="hero-soc-icons" width="24" height="24">
-            <use href="../../public/favicon.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="hero-soc-list-item">
-        <a href="">
-          <svg class="hero-soc-icons" width="24" height="24">
-            <use href="../../public/favicon.svg#icon-telegram"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
+      <div class="modal" data-modal="1">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">reserve-a-table</p>
+</div>
 
-      <section class="section-restuarant ">
-    <div class="container">
-    <h2 class="visually-hiden">About our kitchen</h2>
-    <div class="thumb-kitchen-second">
-        <p class="p-kitchen-one">Amet minim mollit non</p>
-    <p class="logo-kitchen">MIMIHO</p>
-    <p class="p-kitchen-second">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-    </div>
-        <div class="image-kitchen-first">
-            <picture>
-                <source  srcset="../../img/restaurant/about-1-2x.jpg 1x, ../../img/restaurant/about-1.jpg 2x" media="(min-width:1280px)">
-                <source  srcset="../../img/restaurant/about-1-tab-2x.jpg 1x, ../../img/restaurant/about-1-tab.jpg 2x" media="(min-width:1024px)">
-                <source srcset="../../img/restaurant/about-1-mob-2x.jpg 2x" media="(min-width:320px)">
-                <img src="../../img/restaurant/about-1-mob.jpg"  alt="about-1" class="image-item-first" >
-            </picture>
-        </div>
-        <div class="thumb-kitchen-one">
-                <div>
-                    <picture>
-                        <source srcset="../../img/restaurant/about-2.jpg 1x, ../../img/restaurant/about-2-2x.jpg 2x" media="(min-width:1280px)">
-                        <source srcset="../../img/restaurant/about-2-tab.jpg 1x, ../../img/restaurant/about-2-tab-2x.jpg 2x" media="(min-width:1024px)">
-                        <source srcset="../../img/restaurant/about-2-mob-2x.jpg 2x" media="(min-width:320px)">
-                        <img src="../../img/restaurant/about-2-mob.jpg" alt="about-2" class="image-kitchen-second">
-                    </picture>
-                </div>
-            <p class="p-kitchen-three">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        </div>
-    <ul class="slider-kitchen ">
-        <li class="image-kithcen-3">
-            <picture>
-                <source srcset="../../img/restaurant/about-3.jpg 1x, ../../img/restaurant/about-3-2x.jpg 2x" media="(min-width:1280px)">
-                <source srcset="../../img/restaurant/about-3-tab.jpg 1x, ../../img/restaurant/about-3-tab-2x.jpg 2x" media="(min-width:1024px)">
-                <source srcset="../../img/restaurant/about-3-mob-2x.jpg 2x"  media="(min-width:320px)">
-                <img src="../../img/restaurant/about-3-mob.jpg " alt="about-3" class="image-kitchen-item-3">
-            </picture>
-        </li>
-     
-            <li class="image-kitchen-4">
-                <div class="image-kitchen-box-4">
-                    <picture>
-                        <source srcset="../../img/restaurant/about-4.jpg 1x, ../../img/restaurant/about-4-2x.jpg 2x" media="(min-width:1280px)">
-                        <source srcset="../../img/restaurant/about-4-tab.jpg 1x, ../../img/restaurant/about-4-tab-2x.jpg 2x" media="(min-width:1024px)">
-                        <source srcset="../../img/restaurant/about-4-tab-2x.jpg 2x" media="(min-width:320px)">
-                    <img src="../../img/restaurant/about-4.jpg" alt="about-4" class="image-kitchen-item-4" >
-                    </picture>  
-                </div>
-            </li>
-     
-    </ul>
-       <div class="svg-arrows-kitchen ">
-        <svg width="32px" height="32px" class="svg-arrow-one">
-            <use href="/project-group-2/assets/favicon-ded209dd.svg#icon-arrow-left" ></use>
-        </svg>
-        <svg width="32px" height="32px" class="svg-arrow-two">  
-            <use href="/project-group-2/assets/favicon-ded209dd.svg#icon-arrow-right"></use>
-        </svg>
-       </div>
-    </div>
-</section>
+      <div class="modal" data-modal="1">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">reserve-a-table</p>
+</div>
 
-
-      <!--Restaurant Page-->
-<!--Section Menu-->
-<section class="menu" id="menu-restaurant">
-  <div class="container">
-    <h2 class="menu-title">МЕНЮ РЕСТОРАНУ</h2>
-    <div class="menu-table">
-      <div class="menu-group menu-left">
-        <div class="menu-group-list">
-          <h3 class="menu-group-title">Гарячі страви</h3>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">Борщ з телятини з квасолею</h4>
-              <p class="menu-item-text">
-                Телятина, картопля, капуста, морква, цибуля, квасоля, часник,
-                помідори, зелень, сметана
-              </p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">400 г</p>
-              <p class="menu-item-price">240 грн</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">Суп сирний з куркою</h4>
-              <p class="menu-item-text">
-                Курятина, картопля, морква, цибуля, печериці, сир м’який, зелень
-              </p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">400 г</p>
-              <p class="menu-item-price">200 грн</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">Паста карбонара</h4>
-              <p class="menu-item-text">
-                Паста тальятеле, бекон, вершки, сир пармезан, яйце, зелень
-              </p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">350 г</p>
-              <p class="menu-item-price">430 грн</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">Стейк зі свинини</h4>
-              <p class="menu-item-text">
-                Свиняча вирізка, спеціі, подається з соусом солодкий чилі та
-                овочами
-              </p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">400 г</p>
-              <p class="menu-item-price">500 грн</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">Горбуша в соусі з білого вина</h4>
-              <p class="menu-item-text">
-                Ніжна горбуша, вершковий соус на основі білого вина
-              </p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">400 г</p>
-              <p class="menu-item-price">400 грн</p>
-            </div>
-          </div>
-        </div>
-        <div class="menu-group-list">
-          <h3 class="menu-group-title">Гарніри та закуски</h3>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">Запечені овочі</h4>
-              <p class="menu-item-text">Кабачок, перець, помідор, баклажан</p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">200 г</p>
-              <p class="menu-item-price">230 грн</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">Картопля фрі</h4>
-              <p class="menu-item-text">Картопля, соус томатний</p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">150 г</p>
-              <p class="menu-item-price">160 грн</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">Картопля по-селянськи</h4>
-              <p class="menu-item-text">Картопля, спеції, соус пікантний</p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">150 г</p>
-              <p class="menu-item-price">160 грн</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">Хрумкі соління з бочки</h4>
-              <p class="menu-item-text">
-                Огірок солений, помідор квашений, квашена капуста, морква
-                по-корейські
-              </p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">250 г</p>
-              <p class="menu-item-price">350 грн</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-description long">
-              <h4 class="menu-item-name">Крильця курячі в медовому соусі</h4>
-              <p class="menu-item-text long">
-                Крильця курячі, гірчично-медовий соус, подається з морквою,
-                селерою і соусом блючиз
-              </p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">400 г</p>
-              <p class="menu-item-price">420 грн</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="menu-group menu-right">
-        <div class="menu-group-list">
-          <h3 class="menu-group-title">Салати</h3>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">Цезар з куркою</h4>
-              <p class="menu-item-text">
-                Куряче філе, листя салату, помідори чері, сир пармезан, грінки,
-                соус цезар
-              </p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">230 г</p>
-              <p class="menu-item-price">450 грн</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">Цезар з креветками</h4>
-              <p class="menu-item-text">
-                Тигрові креветки, листя салату, помідори чері, сир пармезан,
-                грінки, соус цезар
-              </p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">230 г</p>
-              <p class="menu-item-price">300 грн</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">Грецький салат</h4>
-              <p class="menu-item-text">
-                Свіжі огірок, помідор, болгарський перець, оливки, сир бринза,
-                листя салату, соус
-              </p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">230 г</p>
-              <p class="menu-item-price">280 грн</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-description">
-              <h4 class="menu-item-name">М’ясний салат</h4>
-              <p class="menu-item-text">
-                Куряче філе або свиняча вирізка, свіжі огірок, помідор,
-                болгарський перець, соус ранч
-              </p>
-            </div>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">230 г</p>
-              <p class="menu-item-price">300 грн</p>
-            </div>
-          </div>
-        </div>
-        <div class="menu-group-list">
-          <h3 class="menu-group-title">Десерти</h3>
-          <div class="menu-item finish">
-            <h4 class="menu-item-name menu-item-description">Торт наполеон</h4>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">230 г</p>
-              <p class="menu-item-price">300 грн</p>
-            </div>
-          </div>
-          <div class="menu-item finish">
-            <h4 class="menu-item-name menu-item-description">Торт маковий</h4>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">230 г</p>
-              <p class="menu-item-price">300 грн</p>
-            </div>
-          </div>
-          <div class="menu-item finish">
-            <h4 class="menu-item-name menu-item-description">Тірамісу</h4>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">120 г</p>
-              <p class="menu-item-price">260 грн</p>
-            </div>
-          </div>
-        </div>
-        <div class="menu-group-list">
-          <h3 class="menu-group-title">Напої</h3>
-          <div class="menu-item finish">
-            <h4 class="menu-item-name menu-item-description">
-              Чай чорний/зелений
-            </h4>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">500 мл</p>
-              <p class="menu-item-price">100 грн</p>
-            </div>
-          </div>
-          <div class="menu-item finish">
-            <h4 class="menu-item-name menu-item-description">Еспресо</h4>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">30 мл</p>
-              <p class="menu-item-price">100 грн</p>
-            </div>
-          </div>
-          <div class="menu-item finish">
-            <h4 class="menu-item-name menu-item-description">Американо</h4>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">150 мл</p>
-              <p class="menu-item-price">100 грн</p>
-            </div>
-          </div>
-          <div class="menu-item finish">
-            <h4 class="menu-item-name menu-item-description">Капучино</h4>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">200 мл</p>
-              <p class="menu-item-price">160 грн</p>
-            </div>
-          </div>
-          <div class="menu-item finish">
-            <h4 class="menu-item-name menu-item-description">Лате</h4>
-            <div class="menu-item-cost">
-              <p class="menu-item-weight">200 мл</p>
-              <p class="menu-item-price">160 грн</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button type="button" class="menu-button-reservation">
-      Забронювати столик
-    </button>
-  </div>
-</section>
+      <div class="modal" data-modal="3">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">room-prices</p>
+</div>
 
     </main>
 
@@ -522,6 +199,58 @@
 </footer>
 
 
+    <a href="#" class="js-open-modal" data-modal="1">Открыть reserve-a-table</a>
+    <a href="#" class="js-open-modal" data-modal="2">Открыть book-a-room</a>
+    <a href="#" class="js-open-modal" data-modal="3">Открыть room-prices</a>
+
+    <!-- Несколько модальных окон -->
+    <div class="modal" data-modal="1">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">reserve-a-table</p>
+</div>
+
+    <div class="modal" data-modal="2">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">book-a-room</p>
+</div>
+
+    <div class="modal" data-modal="3">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">room-prices</p>
+</div>
+
+
+    <!-- Подложка под модальным окном -->
+    <div class="overlay js-overlay-modal"></div>
+
+    <script src="./js/modal.js"></script>
     
   </body>
 </html>
