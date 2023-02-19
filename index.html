@@ -22,7 +22,7 @@
     />
     
     <script type="module" crossorigin src="/project-group-2/assets/wow-ade3a53f.js"></script>
-    <link rel="stylesheet" href="/project-group-2/assets/wow-8e54ae00.css">
+    <link rel="stylesheet" href="/project-group-2/assets/wow-ae9f714c.css">
   </head>
   <body>
     <a href="./hotel.html">hotel</a>
@@ -698,14 +698,8 @@
 
     <div class="modal amenities-modal" data-modal="2">
   <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
+  <svg class="modal-prices-cross js-modal-close" width="24" height="24">
+    <use href="/project-group-2/assets/favicon-14874fd1.svg#icon-modal-close-btn"></use>
   </svg>
   <!-- editing zone -->
   <!-- <p class="modal__title">ЗАБРОНЮВАТИ НОМЕР</p> -->
@@ -746,7 +740,6 @@
           class="amenities-input amenities-input-select"
           id="room-type"
           name="room-type"
-          required
         >
           <option value="lux">Двомісний люкс</option>
           <option value="two">Двомісний</option>
@@ -767,7 +760,6 @@
             class="amenities-input amenities-input-select"
             id="arive"
             name="arive"
-            required
           >
             <option value="1">Сьогодні</option>
             <option value="2">Завтра</option>
@@ -784,7 +776,6 @@
             class="amenities-input amenities-input-select"
             id="departure"
             name="departure"
-            required
           >
             <option value="1">Сьогодні</option>
             <option value="2">Завтра</option>

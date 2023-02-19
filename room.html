@@ -22,7 +22,7 @@
     />
     
     <script type="module" crossorigin src="/project-group-2/assets/wow-ade3a53f.js"></script>
-    <link rel="stylesheet" href="/project-group-2/assets/wow-8e54ae00.css">
+    <link rel="stylesheet" href="/project-group-2/assets/wow-ae9f714c.css">
   </head>
   <body>
     <a href="./hotel.html">hotel</a>
@@ -164,8 +164,10 @@
 <section class="amenities-section">
   <div class="amenities-container">
     <div class="amenities-top">
-      <h2 class="amenities-title">ЗРУЧНОСТІ У НОМЕРІ</h2>
-      <p class="amenities-text">
+      <h2 class="amenities-title wow animate__animated animate__fadeInDown">
+        ЗРУЧНОСТІ У НОМЕРІ
+      </h2>
+      <p class="amenities-text wow animate__animated animate__fadeInDown">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
@@ -173,14 +175,22 @@
     </div>
     <ul class="amenities-menu">
       <li class="amenities-item">
-        <h3 class="amenities-item-title">ЗАГАЛЬНІ</h3>
+        <h3
+          class="amenities-item-title wow animate__animated animate__fadeInLeft"
+        >
+          ЗАГАЛЬНІ
+        </h3>
         <div class="amenities-double-text">
-          <p class="amenities-item-text">
+          <p
+            class="amenities-item-text wow animate__animated animate__fadeInLeft"
+          >
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
           </p>
-          <p class="amenities-item-text">
+          <p
+            class="amenities-item-text wow animate__animated animate__fadeInRight"
+          >
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
@@ -188,14 +198,22 @@
         </div>
       </li>
       <li class="amenities-item">
-        <h3 class="amenities-item-title">ВАННА КІМНАТА</h3>
+        <h3
+          class="amenities-item-title wow animate__animated animate__fadeInLeft"
+        >
+          ВАННА КІМНАТА
+        </h3>
         <div class="amenities-double-text">
-          <p class="amenities-item-text">
+          <p
+            class="amenities-item-text wow animate__animated animate__fadeInLeft"
+          >
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
           </p>
-          <p class="amenities-item-text">
+          <p
+            class="amenities-item-text wow animate__animated animate__fadeInRight"
+          >
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
@@ -203,35 +221,57 @@
         </div>
       </li>
       <li class="amenities-item">
-        <h3 class="amenities-item-title">СПАЛЬНЯ</h3>
-        <p class="amenities-item-text">
+        <h3
+          class="amenities-item-title wow animate__animated animate__fadeInLeft"
+        >
+          СПАЛЬНЯ
+        </h3>
+        <p
+          class="amenities-item-text wow animate__animated animate__fadeInLeft"
+        >
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint.
         </p>
       </li>
       <li class="amenities-item">
-        <h3 class="amenities-item-title">КУХНЯ</h3>
+        <h3
+          class="amenities-item-title wow animate__animated animate__fadeInLeft"
+        >
+          КУХНЯ
+        </h3>
         <div class="amenities-double-text">
-          <p class="amenities-item-text">
+          <p
+            class="amenities-item-text wow animate__animated animate__fadeInLeft"
+          >
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint.
           </p>
-          <p class="amenities-item-text">
+          <p
+            class="amenities-item-text wow animate__animated animate__fadeInRight"
+          >
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint.
           </p>
         </div>
       </li>
       <li class="amenities-item">
-        <h3 class="amenities-item-title">МЕДІА</h3>
-        <p class="amenities-item-text">
+        <h3
+          class="amenities-item-title wow animate__animated animate__fadeInLeft"
+        >
+          МЕДІА
+        </h3>
+        <p
+          class="amenities-item-text wow animate__animated animate__fadeInLeft"
+        >
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit.
         </p>
       </li>
     </ul>
     <div class="amenities-bottom">
-      <button class="amenities-btn" type="button">ОФОРМИТИ БРОНЮВАННЯ</button>
+      <button class="amenities-btn js-open-modal" data-modal="2" type="button">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
       <a class="amenities-link" href=""
         >Повернутися до перегляду номерів
         <svg class="amenities-arrow-icon" width="24" height="24">
@@ -328,14 +368,8 @@
 
     <div class="modal amenities-modal" data-modal="2">
   <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
+  <svg class="modal-prices-cross js-modal-close" width="24" height="24">
+    <use href="/project-group-2/assets/favicon-14874fd1.svg#icon-modal-close-btn"></use>
   </svg>
   <!-- editing zone -->
   <!-- <p class="modal__title">ЗАБРОНЮВАТИ НОМЕР</p> -->
@@ -376,7 +410,6 @@
           class="amenities-input amenities-input-select"
           id="room-type"
           name="room-type"
-          required
         >
           <option value="lux">Двомісний люкс</option>
           <option value="two">Двомісний</option>
@@ -397,7 +430,6 @@
             class="amenities-input amenities-input-select"
             id="arive"
             name="arive"
-            required
           >
             <option value="1">Сьогодні</option>
             <option value="2">Завтра</option>
@@ -414,7 +446,6 @@
             class="amenities-input amenities-input-select"
             id="departure"
             name="departure"
-            required
           >
             <option value="1">Сьогодні</option>
             <option value="2">Завтра</option>
