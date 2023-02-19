@@ -22,7 +22,7 @@
     />
     
     <script type="module" crossorigin src="/project-group-2/assets/wow-ade3a53f.js"></script>
-    <link rel="stylesheet" href="/project-group-2/assets/wow-283ab51e.css">
+    <link rel="stylesheet" href="/project-group-2/assets/wow-efdda644.css">
   </head>
   <body>
     <a href="./hotel.html">hotel</a>
@@ -651,12 +651,10 @@
     <!-- Несколько модальных окон -->
     <div class="modal table-modal-menu" data-modal="1">
   <!--   Svg иконка для закрытия окна  -->
+  <svg class="modal-prices-cross js-modal-close" width="24" height="24">
+    <use href="/project-group-2/assets/favicon-14874fd1.svg#icon-modal-close-btn"></use>
   </svg>
-  <svg class="table-modal-close js-modal-close" width="24" height="24">
-    
-    <use href="../../public/favicon.svg#icon-x"></use>
-  </svg>
-  
+
   <h2 class="table-modal-menu-title">ЗАБРОНЮВАТИ СТОЛИК</h2>
   <form class="table-modal-menu-form">
     <div class="table-modal-menu-wraps">
@@ -680,7 +678,6 @@
           name="client-phone"
           class="table-modal-menu-form-input"
           required
-          pattern="^\+\d{2} \(\d{3}\) \d{3}-\d{2}-\d{2}$"
           minlength="19"
           placeholder="+38 (___) ___-__-__"
         />
@@ -690,7 +687,7 @@
       <label class="table-modal-menu-form-fild">
         <span class="table-modal-input-wrap">
           <svg class="table-modal-menu-select-icon" width="24" height="24">
-            <use href="../../public/favicon.svg#icon-arrow-down"></use>
+            <use href="/project-group-2/assets/favicon-14874fd1.svg#icon-arrow-down"></use>
           </svg>
           <select class="table-modal-menu-form-input" name="amount">
             <option value="1">1</option>
@@ -709,7 +706,7 @@
       <label class="table-modal-menu-form-fild">
         <span class="table-modal-input-wrap">
           <svg class="table-modal-menu-select-icon" width="24" height="24">
-            <use href="../../public/favicon.svg#icon-arrow-down"></use>
+            <use href="/project-group-2/assets/favicon-14874fd1.svg#icon-arrow-down"></use>
           </svg>
           <select class="table-modal-menu-form-input" name="day">
             <option value="today">Сьогодні</option>
@@ -717,7 +714,9 @@
           </select>
         </span>
 
-        <span class="table-modal-menu-form-input-desc">На яку дату бронювати</span>
+        <span class="table-modal-menu-form-input-desc"
+          >На яку дату бронювати</span
+        >
       </label>
     </div>
     <button type="submit" class="modal-book-table-reserve">
