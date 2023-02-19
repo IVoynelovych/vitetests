@@ -22,7 +22,7 @@
     />
     
     <script type="module" crossorigin src="/project-group-2/assets/wow-ade3a53f.js"></script>
-    <link rel="stylesheet" href="/project-group-2/assets/wow-ae9f714c.css">
+    <link rel="stylesheet" href="/project-group-2/assets/wow-fa7765a1.css">
   </head>
   <body>
     <a href="./hotel.html">hotel</a>
@@ -549,18 +549,81 @@
     <a href="#" class="js-open-modal" data-modal="3">Открыть room-prices</a>
 
     <!-- Несколько модальных окон -->
-    <div class="modal" data-modal="1">
+    <div class="modal table-modal-menu" data-modal="1">
   <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
   </svg>
-  <p class="modal__title">reserve-a-table</p>
+  <svg class="table-modal-close js-modal-close" width="24" height="24">
+    
+    <use href="../../public/favicon.svg#icon-x"></use>
+  </svg>
+  
+  <h2 class="table-modal-menu-title">ЗАБРОНЮВАТИ СТОЛИК</h2>
+  <form class="table-modal-menu-form">
+    <div class="table-modal-menu-wraps">
+      <label class="table-modal-menu-form-fild">
+        <input
+          type="text"
+          name="client-name"
+          class="table-modal-menu-form-input"
+          required
+          pattern="[a-zA-Z]+"
+          minlength="3"
+          placeholder="Ваше ім’я"
+        />
+        <span class="table-modal-menu-form-input-desc"
+          >На кого забронювати столик?</span
+        >
+      </label>
+      <label class="table-modal-menu-form-fild">
+        <input
+          type="tel"
+          name="client-phone"
+          class="table-modal-menu-form-input"
+          required
+          pattern="^\+\d{2} \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+          minlength="19"
+          placeholder="+38 (___) ___-__-__"
+        />
+        <span class="table-modal-menu-form-input-desc">Номер телефону</span>
+      </label>
+
+      <label class="table-modal-menu-form-fild">
+        <span class="table-modal-input-wrap">
+          <svg class="table-modal-menu-select-icon" width="24" height="24">
+            <use href="../../public/favicon.svg#icon-arrow-down"></use>
+          </svg>
+          <select class="table-modal-menu-form-input" name="amount">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </span>
+
+        <span class="table-modal-menu-form-input-desc"
+          >Столик на яку кількість осіб?</span
+        >
+      </label>
+      <label class="table-modal-menu-form-fild">
+        <span class="table-modal-input-wrap">
+          <svg class="table-modal-menu-select-icon" width="24" height="24">
+            <use href="../../public/favicon.svg#icon-arrow-down"></use>
+          </svg>
+          <select class="table-modal-menu-form-input" name="day">
+            <option value="today">Сьогодні</option>
+            <option value="tomorrow">Завтра</option>
+          </select>
+        </span>
+
+        <span class="table-modal-menu-form-input-desc">На яку дату бронювати</span>
+      </label>
+    </div>
+    <button type="submit" class="modal-book-table-reserve">
+      ОФОРМИТИ БРОНЮВАННЯ
+    </button>
+  </form>
 </div>
 
     <div class="modal amenities-modal" data-modal="2">
