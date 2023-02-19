@@ -22,7 +22,7 @@
     />
     
     <script type="module" crossorigin src="/project-group-2/assets/wow-e90083a0.js"></script>
-    <link rel="stylesheet" href="/project-group-2/assets/wow-4c144f0c.css">
+    <link rel="stylesheet" href="/project-group-2/assets/wow-712daaf0.css">
   </head>
   <body>
     <a href="./hotel.html">hotel</a>
@@ -677,36 +677,42 @@
   <form class="modal-prices-form">
     <p class="modal-prices-text">Двомісний люкс</p>
     <p class="modal-prices-label">Категорія номеру</p>
-    <div class="prices-select-input-wrap">
-      <select
-        id="modal-prices-room-type"
-        name="modal-prices-room-type"
-        class="modal-prices-room-type"
-      >
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-      </select>
-      <svg class="icon-for-select" width="24px" height="24px">
-        <use href="/project-group-2/assets/favicon-14874fd1.svg#icon-arrow-down"></use>
-      </svg>
-    </div>
-    <label for="modal-prices-room-type" class="modal-prices-label qty-nights"
-      >Кількість ночей</label
-    >
-
-    <input
-      type="number"
-      id="price-input-summ"
-      name="price-input-summ"
-      class="price-input-summ"
-      placeholder="1000"
-    />
-    <label for="price-input-summ" class="modal-prices-label price-grn">грн</label>
+    <div class="modal-prices-flex">
+      <div class="modal-prices-firs-block">
+        <div class="prices-select-input-wrap">
+          <select
+            id="modal-prices-room-type"
+            name="modal-prices-room-type"
+            class="modal-prices-room-type prices-input-width"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+          <svg class="icon-for-select" width="24px" height="24px">
+            <use href="/project-group-2/assets/favicon-14874fd1.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+        <label for="modal-prices-room-type" class="modal-prices-label qty-nights"
+          >Кількість ночей</label
+        >
+      </div>
+  
+      <div class="modal-prices-second-block">
+        <input
+          type="number"
+          id="price-input-summ"
+          name="price-input-summ"
+          class="price-input-summ"
+          placeholder="1000"
+        />
+        <label for="price-input-summ" class="modal-prices-label price-grn">грн</label>
+      </div>
+      </div>
 
     <button type="submit" class="modal-prices-send-btn">Забронювати номер</button>
   </form>
