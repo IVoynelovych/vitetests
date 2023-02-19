@@ -22,7 +22,7 @@
     />
     
     <script type="module" crossorigin src="/project-group-2/assets/wow-9dfe9673.js"></script>
-    <link rel="stylesheet" href="/project-group-2/assets/wow-7826431f.css">
+    <link rel="stylesheet" href="/project-group-2/assets/wow-e395d72d.css">
   </head>
   <body>
     <a href="./hotel.html">hotel</a>
@@ -658,19 +658,59 @@
   <p class="modal__title">book-a-room</p>
 </div>
 
-    <div class="modal" data-modal="3">
+    <div class="modal modal-prices" data-modal="3">
+    <svg class="modal-prices-cross js-modal-close" width="24" height="24">
+      <use href="/project-group-2/assets/favicon-14874fd1.svg#icon-x"></use>
+    </svg>
+  <h2 class="modal-prices-title">ЦІНИ НА НОМЕР</h2>
+  <form class="modal-prices-form">
+    <p class="modal-prices-text">Двомісний люкс</p>
+    <p class="modal-prices-label">Категорія номеру</p>
+    <div class="prices-select-input-wrap">
+      <select
+        id="modal-prices-room-type"
+        name="modal-prices-room-type"
+        class="modal-prices-room-type"
+      >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+      <svg class="icon-for-select" width="24px" height="24px">
+        <use href="/project-group-2/assets/favicon-14874fd1.svg#icon-arrow-down"></use>
+      </svg>
+    </div>
+    <label for="modal-prices-room-type" class="modal-prices-label qty-nights"
+      >Кількість ночей</label
+    >
+
+    <input
+      type="number"
+      id="price-input-summ"
+      name="price-input-summ"
+      class="price-input-summ"
+      placeholder="1000"
+    />
+    <label for="price-input-summ" class="modal-prices-label price-grn">грн</label>
+
+    <button type="submit" class="modal-prices-send-btn">Забронювати номер</button>
+  </form>
+</div>
   <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
+  <!-- <svg
+    class="modal-cross js-modal-close"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
   >
     <path
       d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
     />
-  </svg>
-  <p class="modal__title">room-prices</p>
-</div>
+  </svg> -->
+  <!-- <p class="modal__title">room-prices</p> -->
 
 
     <!-- Подложка под модальным окном -->
