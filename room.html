@@ -406,7 +406,7 @@
           name="client-name"
           class="table-modal-menu-form-input"
           required
-          pattern="[A-Za-zА-Яа-яЁё \ s] + $"
+          pattern="^[A-Za-zА-Яа-яіІїЇ]+$"
           minlength="3"
           placeholder="Ваше ім’я"
         />
@@ -420,8 +420,9 @@
           name="client-phone"
           class="table-modal-menu-form-input"
           required
-          minlength="19"
+          minlength="10"
           placeholder="+38 (___) ___-__-__"
+          title="xxx xxx xx xx"
         />
         <span class="table-modal-menu-form-input-desc">Номер телефону</span>
       </label>
