@@ -17,6 +17,7 @@
 }
 .footer > .container {
   display: flex;
+  justify-content: space-around;
 }
 
 .footer-soc-list {
@@ -37,7 +38,6 @@
 }
 
 .footer-logo-link {
-  margin-right: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
