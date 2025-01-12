@@ -1,57 +1,10 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-
-@import url('./reset.css');
-
-@import url('./common.css');
-
 @import url('./header.css');
-@import url('./footer.css');
-
-/* main page */
-@import url('./main/main-hero.css');
-@import url('./main/about-restaurant.css');
-@import url('./main/restaurant-details.css');
-@import url('./main/about-hotel.css');
-@import url('./main/hotel-details.css');
-@import url('./main/contacts.css');
-
-/* hotel page */
-@import url('./hotel/hotel-hero.css');
-@import url('./hotel/luxe-for-two.css');
-@import url('./hotel/for-two.css');
-@import url('./hotel/for-three.css');
-
-/* restaurant page */
-@import url('./restaurant/restaurant-hero.css');
-@import url('./restaurant/about-kitchen.css');
-@import url('./restaurant/menu.css');
-
-/* room page */
-@import url('./room/room-hero.css');
-@import url('./room/amenities.css');
-
-/* modal */
-
-@import url('./modal/book-a-room.css');
-@import url('./modal/reserve-a-table.css');
-@import url('./modal/room-prices.css');
-
-:root {
-  --accent-yellow: #f3c653;
-  --brown: #c79002;
-  --fon-lemon: #fffdee;
-  --fon-dark-lemon: #f0ecd6;
-  --color-footer: #0e0c07;
-  --color-logo: #494848;
-  --color-secondtxt: #b4b4b4;
-  --color-title: #000000;
-  --color-primtxt: #7a7a7a;
-  --hover-and-clik: #ffffff;
-
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+@import url('./registration.css');
+@import url('./test.css');
+@import url('./task.css');
+@import url('./topic.css');
+@import url('./account.css');
+@import url('./hero.css');
+@import url('./normalize.css');
+@import url("./reset.css");
+@import url("./hero.css");

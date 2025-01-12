@@ -8,13 +8,11 @@
     "build": "vite build --base=/vitetests/",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "vite": "^4.0.0"
-  },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "vite-plugin-full-reload": "^1.0.5",
-    "vite-plugin-html-inject": "^1.0.1"
+    "vite": "^5.0.12",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
   }
 }

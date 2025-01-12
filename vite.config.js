@@ -5,14 +5,19 @@ import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
   root: 'src',
-
+  server: {
+    host: 'localhost', 
+    port: 3000,
+    hmr: {
+      protocol: 'ws', 
+      host: 'localhost',
+    },
+  },
   build: {
     rollupOptions: {
       input: {
+        
         main: resolve(__dirname, 'src/index.html'),
-        nested: resolve(__dirname, 'src/hotel.html'),
-        nestedTwo: resolve(__dirname, 'src/room.html'),
-        nestedThree: resolve(__dirname, 'src/restaurant.html'),
       },
     },
     outDir: '../dist',
