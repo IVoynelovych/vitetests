@@ -1,6 +1,6 @@
 .hero-cont {
   max-width: 320px;
-  padding: 0 37px 300px 14px;
+  padding: 0 37px 245.5px 14px;
 }
 .hero-title {
   color: #fffdfd;
@@ -55,7 +55,7 @@
 @media screen and (min-width: 1440px) {
   .hero-cont {
     max-width: 1440px;
-    padding: 0 314px 320px 164px;
+    padding: 0 314px 460px 164px;
   }
   .hero-title {
     font-size: 50px;
