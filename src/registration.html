@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="harry-potter-test-preparation-backend.onrender.com">
+  </head>
+  <body class="registration-back">
+    <load src="./header.html" />
+    <section class="registration">
+      <div class="reg-cont">
+        <div class="reg-content">
+            <h2 class="reg-title">Реєстрація</h2>
+            <form>
+                <label class="name-label">
+                  <p class="reg-input-text">Прізвище Імя</p>
+                  <input type="text" placeholder="..." class="reg-input surname"  pattern="^[^\s]+(\s[^\s]+)$" required/>
+                </label>
+                <div class="stable-reg">
+                    <label class="stable-reg-input">
+                        <p class="reg-input-text">Пошта</p>
+                        <input type="text" placeholder="..." class="reg-input email" required/>
+                    </label>
+                    <label class="stable-reg-input">
+                        <p class="reg-input-text">Пароль</p>
+                        <input type="text" placeholder="..." class="reg-input password" required/>
+                    </label>
+                </div>
+                <button type="button" class="reg-sub">Підтвердити</button>
+                <button type="button" class="reg-sub_log">Підтвердити</button>
+            </form>
+            <div class="change-reg-to-log">
+              <p class="change-text">вже зареєстровані?</p>
+              <svg class="arrow-svg">
+                <use href="./img/arrow-reg.svg#arrow-change"></use>
+              </svg>
+              <button type="button" class="change-btn">Вхід до акаунту</button>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./main.js" type="module" ></script>
 </html>

@@ -1,6 +1,7 @@
 .hero-cont {
   max-width: 320px;
   padding: 0 37px 245.5px 14px;
+  margin: 0 auto;
 }
 .hero-title {
   color: #fffdfd;
