@@ -21,15 +21,23 @@ export function registration() {
     },
     body: JSON.stringify(registration_data),
   })
-    .then(response => response.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP Error: ${response.status}`);
+    }
+    return response.json();
+  })
     .then(data => {
       localStorage.setItem('token', data.token); 
       console.log('Результат реєстрації:', data);
-      
+      localStorage.setItem('account_status', 'true');
+      changeacc();
+      window.location.href = '../account.html';    
     })
-    .catch(error => console.error('Помилка реєстрації:', error));
-    localStorage.setItem('account_status', 'true');
-    changeacc();
+    .catch(error =>{ 
+      alert('Помилка реєстрації')
+      console.error('Помилка реєстрації:', error)});
+    
 }
 
 export const root_reg = {

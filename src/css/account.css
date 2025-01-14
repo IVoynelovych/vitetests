@@ -1,0 +1,111 @@
+.account-back {
+  background-image: url(../img/account-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.account {
+  margin-top: 60px;
+}
+.acc-cont {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 93px 271px 11px;
+}
+.acc-content {
+  border-radius: 30px;
+  background: rgba(69, 69, 69, 0.72);
+  padding: 20px 30px 42px 17px;
+}
+.user_avatar {
+  border-radius: 100px;
+  border: 2px solid #000;
+  width: 50px;
+  height:50px;
+}
+.user_name {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 21px 0 4px;
+}
+.user_mail {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 400;
+}
+.user_progress-bar {
+  margin-top: 18px;
+  width: 100%;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.34);
+  border-radius: 1000px;
+  overflow: hidden;
+}
+.user_progress-value {
+  height: 100%;
+  background: #4f1717;
+  border-radius: 1000px 0 0 1000px;
+}
+@media screen and (min-width:768px) {
+    .account {
+        margin-top: 32px;
+      }
+      .acc-cont {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 437px 208px 51px;
+      }
+      .acc-content {
+        border-radius: 30px;
+        background: rgba(69, 69, 69, 0.72);
+        padding: 7px 23px 25px 7px;
+      }
+      .user_avatar {
+        width: 110px;
+        height:110px;
+      }
+      .user_name {
+        font-size:32px;
+        margin: 25px 0 8px;
+      }
+      .user_mail {
+        font-size: 11px;
+      }
+      .user_progress-bar {
+        margin-top: 12px;
+        height: 22px;
+        overflow: hidden;
+      }
+
+}
+@media screen and (min-width:1440px) {
+    .account {
+        margin-top: 91px;
+      }
+      .acc-cont {
+        max-width: 1440px;
+        padding: 0 847px 398px 94px;
+      }
+      .acc-content {
+        border-radius: 30px;
+        background: rgba(69, 69, 69, 0.72);
+        padding: 20px 93px 42px 17px;
+      }
+      .user_avatar {
+        width: 200px;
+        height: 200px;
+      }
+      .user_name {
+        font-size:48px;
+        margin: 60px 0 8px;
+      }
+      .user_mail {
+        font-size: 20px;
+      }
+      .user_progress-bar {
+        margin-top: 26px;
+        height: 38px;
+      }
+
+}
