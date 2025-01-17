@@ -27,7 +27,7 @@ export function login() {
       console.log('Результат входу:', data);
       localStorage.setItem('account_status', 'true');   
       changeacc();
-      window.location.href = 'account.html';
+      window.location.href = './account.html';
       localStorage.setItem('token', data.token);
     })
     .catch(error =>{ 

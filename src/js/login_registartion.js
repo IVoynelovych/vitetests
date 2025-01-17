@@ -31,7 +31,7 @@ export function registration() {
       console.log('Результат реєстрації:', data);
       localStorage.setItem('account_status', 'true');
       changeacc();
-      window.location.href = 'account.html';  
+      window.location.href = './account.html';  
     })
     .catch(error =>{ 
       alert('Помилка реєстрації')
