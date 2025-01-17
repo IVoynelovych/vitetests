@@ -4,12 +4,14 @@ const progressBar = document.querySelector('.user_progress-value');
 const user_ava = document.querySelector('.user_avatar');
 const user_name = document.querySelector('.user_name');
 const user_mail = document.querySelector('.user_mail');
-let accessToken = localStorage.getItem('token')
 function account() {
+  let accessToken = localStorage.getItem('token')
+  console.log(accessToken)
   fetch(`${url}auth/getInfo`, {
     method: 'GET',
     headers: {
       Authorization: 'Bearer ' + accessToken,
+      "ngrok-skip-browser-warning": "69420",
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(),
@@ -21,15 +23,14 @@ function account() {
       return response.json();
     })
     .then(data => {
-        console.log(data.user.email)
       progressBar.style.width = `${data.user.progress}%`;
       user_ava.setAttribute('src', data.user.avatar);
       user_name.innerHTML = `${data.user.lastName} ${data.user.firstName}`;
       user_mail.innerHTML = `${data.user.email}`;
     })
     .catch(error => {
-      alert('Помилка');
-      console.error('Помилка:', error)
+      alert('Помилка авторизації');
+      console.error('Помилка авторизації:', error)
       localStorage.setItem('account_status', false)
       changeacc()
       window.location.href = 'index.html';
@@ -37,7 +38,6 @@ function account() {
 }
 window.addEventListener('load', () => {
     account();
+    changeacc()
   });
-// export const account_root = {
-//     progressBar: document.querySelector('.progress-value'),
-// }
+

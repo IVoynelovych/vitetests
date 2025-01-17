@@ -3,7 +3,6 @@ const url = 'https://harry-potter-test-preparation-backend.onrender.com/';
 const password_input = document.querySelector('.password');
 const surname_input = document.querySelector('.surname');
 const submit_form = document.querySelector('.reg-sub');
-
 const email_input = document.querySelector('.email');
 export function registration() {
   const [user_surname, user_name] = surname_input.value.trim().split(' ');
@@ -13,10 +12,10 @@ export function registration() {
     lastName: user_surname,
     password: password_input.value.trim(),
   };
-  console.log(registration_data);
   fetch(`${url}auth/signup`, {
     method: 'POST',
     headers: {
+      "ngrok-skip-browser-warning": "69420",
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(registration_data),
@@ -32,14 +31,12 @@ export function registration() {
       console.log('Результат реєстрації:', data);
       localStorage.setItem('account_status', 'true');
       changeacc();
-      window.location.href = '../account.html';    
+      window.location.href = '../account.html';  
     })
     .catch(error =>{ 
       alert('Помилка реєстрації')
-      console.error('Помилка реєстрації:', error)});
-    
+      console.error('Помилка реєстрації:', error)});   
 }
-
 export const root_reg = {
   password_input: document.querySelector('.password'),
   surname_input: document.querySelector('.surname'),

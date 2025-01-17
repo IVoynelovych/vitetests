@@ -47,6 +47,7 @@
     flex-direction: column;
     gap: 7px;
 }
+
 .reg-input::placeholder {
   color: #fff;
   font-size: 13px;
@@ -60,7 +61,7 @@
   font-size: 10px;
   font-weight: 400;
   padding: 9px 16px;
-  margin: 16px 0 100px 176px;
+  margin: 16px 0 100px 183px;
 }
 .reg-sub_log{
     border-radius: 8px;
@@ -164,9 +165,10 @@
     font-size: 15px;
   }
   .reg-sub {
+
     font-size: 15px;
     padding: 8px 19px;
-    margin: 19px 0 7px 564px;
+    margin: 19px 0 7px 572px;
   }
   .reg-sub_log{
     font-size: 15px;

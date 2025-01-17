@@ -8,10 +8,10 @@ export function login() {
     email: email_input.value.trim(),
     password: password_input.value.trim(),
   };
-  console.log(registration_data);
   fetch(`${url}auth/signin`, {
     method: 'POST',
     headers: {
+      "ngrok-skip-browser-warning": "69420",
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(registration_data),
@@ -23,15 +23,16 @@ export function login() {
       return response.json();
     })
     .then(data => {
-      localStorage.setItem('account_status', 'true');
-      localStorage.setItem('token', data.token);
+      console.log('Результат входу:', data.token);      
       console.log('Результат входу:', data);
+      localStorage.setItem('account_status', 'true');   
       changeacc();
       window.location.href = '../account.html';
+      localStorage.setItem('token', data.token);
     })
     .catch(error =>{ 
-        alert('Помилка реєстрації')
-        console.error('Помилка реєстрації:', error)});
+        alert('Помилка входу')
+        console.error('Помилка входу:', error)});
 }
 
 export const root_reg = {

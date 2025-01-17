@@ -18,6 +18,10 @@ export default defineConfig({
       input: {
         
         main: resolve(__dirname, 'src/index.html'),
+        topics: resolve(__dirname, 'src/topics.html'),
+        account: resolve(__dirname, 'src/account.html'),
+        registration: resolve(__dirname, 'src/registration.html'),
+
       },
     },
     outDir: '../dist',
