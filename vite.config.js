@@ -21,6 +21,7 @@ export default defineConfig({
         topics: resolve(__dirname, 'src/topics.html'),
         account: resolve(__dirname, 'src/account.html'),
         registration: resolve(__dirname, 'src/registration.html'),
+        task: resolve(__dirname,'src/task.html')
 
       },
     },
