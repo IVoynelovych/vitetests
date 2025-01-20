@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="task_bg">
+    <load src="./header.html" />
+    <section class="task">
+      <div class="task-cont">
+        <p class="condition" id="formula"></p>
+        <div class="question-elements">
+        </div>
+        <button type="button" class="finish-task">Зберегти</button>
+      </div>
+      <svg class="chat-svg">
+        <use href="./img/chat.svg#chat"></use>
+      </svg>
+      <div class='module-menu is-hidden'>
+        <button class="close-btn">X</button>
+        <button class="delete-chat-btn">Видалити чат</button>
+        <ul class="messages-list">
+          <p class="chat-answer"></p>
+          <p class="user-messege"> </p>
+        </ul>
+        <input type="text" class="user-question" placeholder="...">
+        <button type="button" class="send-messege-btn">Відправити</button>
+      </div>
+    </section>
+    <script src="./task-page.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+  </body>
 </html>

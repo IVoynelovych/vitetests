@@ -1,0 +1,228 @@
+.match-table {
+  position: absolute;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+  right: 10px;
+}
+.match-table th,
+.match-table td {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  font-size: 10px;
+}
+
+.match-table th {
+  font-weight: bold;
+}
+
+.match-radio {
+  transform: scale(1.2);
+  width: 5px;
+  height: 5px;
+}
+
+.match-number-cell {
+  font-weight: bold;
+}
+
+.task_bg {
+  background-image: url(../img/task-bg-320.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.task {
+  margin-top: 172px;
+}
+.task-cont {
+  padding: 0 32px 241px 48px;
+}
+.question-input {
+  background: transparent;
+  border: 1px solid #fff;
+  width: 150px;
+  height: 12px;
+  color: #fff;
+  outline: none;
+}
+.question-input::placeholder {
+  color: #fff;
+  padding-left: 10px;
+}
+.condition {
+  color: #fff;
+  font-size: 7px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.help-text {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.messages-list{
+  height:100px;
+  overflow: scroll;
+}
+.unchoosed {
+  background-color: rgba(68, 68, 68, 1);
+  border-radius: 10000000px;
+  width: 10px;
+  height: 10px;
+}
+.choosen {
+  background-color: #bebebe;
+  border-radius: 10000000px;
+  width: 10px;
+  height: 10px;
+}
+.option_cont {
+  display: flex;
+  align-items: center;
+}
+.chat-svg {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 390px;
+  left: 19px;
+}
+.option-button {
+  color: #fff;
+  font-size: 7px;
+  font-weight: 400;
+  background-color: transparent;
+}
+.answer-list {
+  display: flex;
+  flex-direction: column;
+  li:nth-child(1)::before {
+    content: 'а. ';
+  }
+  li:nth-child(2)::before {
+    content: 'б. ';
+  }
+  li:nth-child(3)::before {
+    content: 'в. ';
+  }
+  li:nth-child(4)::before {
+    content: 'г. ';
+  }
+  li:nth-child(5)::before {
+    content: 'д. ';
+  }
+}
+.questions-list {
+  list-style: decimal;
+}
+.question-elements {
+  display: flex;
+  gap: 15px;
+}
+.match-question-item {
+  color: rgba(255, 255, 255, 1);
+  font-size: 7px;
+}
+.match-question-item + .match-question-item {
+  margin-top: 5px;
+}
+
+.match-title {
+  width: 83px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 7px;
+  margin-bottom: 5px;
+}
+.module-menu {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  background-color: #555555;
+  border-radius: 50px;
+  padding: 20px;
+}
+.delete-chat-btn{
+    background-color: rgba(180, 180, 180, 1);
+  border-radius: 4px;
+  opacity: 0.75;
+  color: rgba(68, 68, 68, 1);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 3px 9.5px;
+}
+.delete-chat-btn:hover{
+    color: red;
+    border-color: red;
+    border:1px red solid ;
+    font-weight: 900;
+    background-color: transparent;
+}
+.close-btn{
+    background-color: transparent;
+    color:rgba(255, 255, 255, 1) ;
+    border: 1px solid rgba(255, 255, 255, 1);
+    margin-bottom: 10px;
+}
+.close-btn:hover{
+    color:rgba(68, 68, 68, 1) ;
+    background-color: rgba(255, 255, 255, 1);
+}
+.is-hidden {
+    display:none;
+}
+.chat-answer {
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.user-messege {
+  text-align: end;
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.user-question {
+  background-color: transparent;
+  border: 1px #fff solid;
+  margin-bottom: 10px;
+  outline: none;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 1);
+  padding-left: 10px;
+}
+.user-question::placeholder {
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  padding-left: 10px;
+}
+.send-messege-btn {
+  background-color: rgba(180, 180, 180, 1);
+  border-radius: 4px;
+  opacity: 0.75;
+  color: rgba(68, 68, 68, 1);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 3px 9.5px;
+}
+.send-messege-btn:hover {
+  color: rgba(68, 68, 68, 1);
+  opacity: 1;
+}
+.finish-task {
+  background-color: rgba(180, 180, 180, 1);
+  border-radius: 4px;
+  opacity: 0.75;
+  color: rgba(68, 68, 68, 1);
+  font-size: 8px;
+  font-weight: 400;
+  padding: 3px 9.5px;
+  margin-left: 130px;
+}
+.finish-task:hover {
+  color: rgba(68, 68, 68, 1);
+  opacity: 1;
+}

@@ -1,5 +1,6 @@
 const url = 'https://harry-potter-test-preparation-backend.onrender.com/';
 const test = document.createElement('li');
+import { GetTask } from "./task-make";
 test.style.cursor = 'pointer';
 export function showTaskById(topicId, dropdown, topicname) {
     let accessToken = localStorage.getItem('token');
@@ -24,9 +25,13 @@ export function showTaskById(topicId, dropdown, topicname) {
         data.forEach(task => {
           const listItem = document.createElement('li');
           listItem.textContent = `${task.condition}`;
-          listItem.setAttribute('taskId', task._id);
+          listItem.setAttribute('taskId', JSON.stringify(task._id));
           listItem.classList.add('task_item');
           listItem.style.cursor = 'pointer';
+          listItem.addEventListener('click', ()=>{
+            localStorage.setItem('taskId', task._id)
+            window.location.href = 'task.html'
+        })
           dropdown.appendChild(listItem);
         });
         const test = document.createElement('li');

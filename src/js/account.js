@@ -23,6 +23,7 @@ function account() {
       return response.json();
     })
     .then(data => {
+      console.log(data)
       progressBar.style.width = `${data.user.progress}%`;
       user_ava.setAttribute('src', data.user.avatar);
       user_name.innerHTML = `${data.user.lastName} ${data.user.firstName}`;
