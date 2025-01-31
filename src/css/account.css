@@ -4,7 +4,22 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.logout-btn{
+  border-radius: 6px;
+  background-color: rgba(69, 69, 69, 0.72);
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  font-size: 12px;
+  padding: 10px 6.5px;
+}
+.logout-btn:hover{
+  opacity: 1;
+  cursor: pointer;
+}
 .account {
+  position: relative;
   margin-top: 60px;
 }
 .acc-cont {
@@ -106,6 +121,13 @@
       .user_progress-bar {
         margin-top: 26px;
         height: 38px;
+      }
+      .logout-btn{
+        border-radius: 8px;
+        bottom: 150px;
+        right: 50px;
+        font-size: 20px;
+        padding: 10px 10px;
       }
 
 }

@@ -1,5 +1,6 @@
 const url = 'https://harry-potter-test-preparation-backend.onrender.com/';
 const condition = document.querySelector('.condition');
+const conteiner = document.querySelector('.all-in-auestion')
 const optionsContainer = document.querySelector('.question-elements');
 import { renderWithMathJax } from './task/render';
 import { taskType } from './task/task_type';
@@ -23,8 +24,15 @@ export function GetTask() {
       return response.json();
     })
     .then(data => {
-      condition.innerHTML = data.condition;
+      condition.innerHTML = `${data.condition}`;
+      if(data.captionPicture){
+        const pic = document.createElement('img')
+        pic.setAttribute('src', data.captionPicture)
+        pic.classList.add('task-picture')
+        conteiner.appendChild(pic)
+      }
       localStorage.setItem('condition',data.condition )
+      console.log(data)
       taskType(data);
       renderWithMathJax(condition); 
       return data;

@@ -7,7 +7,6 @@
       href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap"
       rel="stylesheet"
     />
-
     <script
       type="text/javascript"
       async
@@ -21,22 +20,37 @@
     <section class="task">
       <div class="task-cont">
         <p class="condition" id="formula"></p>
-        <div class="question-elements">
-        </div>
+        <div class="all-in-auestion"><div class="question-elements"></div></div>
         <button type="button" class="finish-task">Зберегти</button>
       </div>
       <svg class="chat-svg">
         <use href="./img/chat.svg#chat"></use>
       </svg>
-      <div class='module-menu is-hidden'>
-        <button class="close-btn">X</button>
-        <button class="delete-chat-btn">Видалити чат</button>
+      <div class="module-menu is-hidden">
+        <div class="close-delete-btns">
+          <button class="close-btn">
+            <svg class="close-svg">
+              <use href="./img/close_modal.svg#close"></use>
+            </svg>
+          </button>
+          <button class="delete-chat-btn">
+            <svg class="delete-svg" >
+              <use href="./img/delete_chat.svg#delete"></use>
+            </svg>
+          </button>
+        </div>
         <ul class="messages-list">
           <p class="chat-answer"></p>
-          <p class="user-messege"> </p>
+          <p class="user-messege"></p>
         </ul>
-        <input type="text" class="user-question" placeholder="...">
-        <button type="button" class="send-messege-btn">Відправити</button>
+        <div class="users-message">
+          <input type="text" class="user-question" placeholder="..." />
+          <button type="button" class="send-messege-btn">
+            <svg class='send_svg'>
+              <use href="./img/send_message.svg#send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
     <script src="./task-page.js" type="module"></script>

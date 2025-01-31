@@ -15,7 +15,6 @@ export function changeto() {
     submit_form.classList.add('hidden');
     submit_log.classList.remove('hidden');
     log_cont.classList.remove('stable-reg')
-    console.log(log_cont)
     change_text.innerHTML = 'Ще не маєте акаунту?';
     change_btn.innerHTML = 'Реєстрація';
     isReg = false;
@@ -23,7 +22,6 @@ export function changeto() {
     title.innerHTML = 'Реєстрація';
     name_prop.classList.remove('hidden');
     log_cont.classList.add('stable-reg')
-    console.log(log_cont)
     change_text.innerHTML = 'вже зареєстровані?';
     change_btn.innerHTML = 'Вхід до акаунту';
     isReg = true;

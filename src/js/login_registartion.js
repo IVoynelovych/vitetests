@@ -35,7 +35,8 @@ export function registration() {
     })
     .catch(error =>{ 
       alert('Помилка реєстрації')
-      console.error('Помилка реєстрації:', error)});   
+      console.error('Помилка реєстрації:', error)}); 
+       
 }
 export const root_reg = {
   password_input: document.querySelector('.password'),

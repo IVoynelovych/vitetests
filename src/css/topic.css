@@ -9,6 +9,9 @@
     pointer-events: none;
     opacity: 0.5;
 }
+.loader{
+  color: #fff;
+}
 .topic {
   margin-top: 77px;
 }

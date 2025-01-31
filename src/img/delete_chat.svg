@@ -1,0 +1,15 @@
+<svg id='delete' viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_375_620)">
+<path d="M13.175 18.5926H3.82495C2.97495 18.5926 2.1958 17.8487 2.1958 16.8818V3.04633H14.7333V16.8818C14.7333 17.8487 14.025 18.5926 13.175 18.5926Z" stroke="#BEBEBE" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M0.920898 3.12073H16.0792" stroke="#BEBEBE" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M11.1914 3.12072H5.80811V2.67442C5.80811 1.63304 6.58727 0.814819 7.57894 0.814819H9.34977C10.3414 0.814819 11.1206 1.63304 11.1206 2.67442V3.12072H11.1914Z" stroke="#BEBEBE" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M5.80811 5.87292V15.766" stroke="#BEBEBE" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M8.5 5.87292V15.766" stroke="#BEBEBE" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M11.1919 5.87292V15.766" stroke="#BEBEBE" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0_375_620">
+<rect width="17" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

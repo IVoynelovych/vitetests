@@ -1,20 +1,22 @@
-import { GetTask } from './js/task-make';
-import { finishTask } from './js/task/finishtask';
+import { loadtest } from './js/test/test_load';
 import { openchat } from './js/task/chat';
 import { toggleMenu } from './js/task/modal';
 import { send_message } from './js/task/send_message';
 import { delete_chat } from './js/task/deletechat';
 import { create_chat } from './js/task/createchat';
+import { changeTask } from './js/test/test_load';
+import { finishTest } from './js/test/finish_test';
+import { finishTestTask } from './js/test/save_ansforquestion';
+const save_ans = document.querySelector('.finish-task');
 const close_modal = document.querySelector('.close-btn');
-const chat_btn = document.querySelector('.chat-svg');
-const finish_btn = document.querySelector('.finish-task');
-const message_send = document.querySelector('.send-messege-btn');
 const delete_chat_btn = document.querySelector('.delete-chat-btn');
-let chat_exist;
+const chat_btn = document.querySelector('.chat-svg');
+const message_send = document.querySelector('.send-messege-btn');
+const finish_test = document.querySelector('.finish-test')
 chat_btn.addEventListener('click', () => {
   toggleMenu();
-  if(localStorage.getItem('isChatExist') == 'false' || localStorage.getItem('isChatExist')==null){
-    create_chat()
+  if (localStorage.getItem('isChatExist') == 'false') {
+    create_chat();
   }
 });
 delete_chat_btn.addEventListener('click', () => {
@@ -33,8 +35,13 @@ close_modal.addEventListener('click', () => {
   toggleMenu();
 });
 window.addEventListener('load', () => {
-  GetTask();
+  loadtest();
+  save_ans.addEventListener('click', () => {
+    let index = localStorage.getItem('currentTaskIndex');
+    finishTestTask();
+    changeTask(Number(index) + 1);
+  });
 });
-finish_btn.addEventListener('click', () => {
-  finishTask();
-});
+finish_test.addEventListener('click', ()=>{
+    finishTest()
+})

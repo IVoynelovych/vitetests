@@ -6,7 +6,6 @@ export function taskType(data) {
   if (data.type === 'options' && data.options.length > 0){
     localStorage.setItem('type', data.type)
     const savedChoice = localStorage.getItem('selectedOption');
-    console.log(data)
     data.options.forEach(option => {
         const containerOption = document.createElement('div');
         containerOption.classList.add('option_cont');
@@ -17,6 +16,7 @@ export function taskType(data) {
 
         optionElement.classList.add('option-button');
         optionElement.textContent = option.name;
+        renderWithMathJax(optionElement)
         if (option.name === savedChoice) {
             optionCheck.classList.add('choosen');
         }
@@ -27,7 +27,6 @@ export function taskType(data) {
             if (previouslyChosen === optionCheck) {
                 optionCheck.classList.remove('choosen');
                 localStorage.removeItem('selectedOption');
-                console.log('Выбор отменен');
                 return;
             }
 
@@ -36,7 +35,6 @@ export function taskType(data) {
             }
             optionCheck.classList.add('choosen');
             localStorage.setItem('selectedOption', option.key);
-            console.log(`Вы выбрали: ${option.name}`);
         });
 
         containerOption.append(optionCheck);
@@ -98,7 +96,7 @@ export function taskType(data) {
                 }
             }
         });
-
+        renderWithMathJax(answerItem)
         answerslist.appendChild(answerItem);
     });
 
@@ -116,7 +114,7 @@ export function taskType(data) {
 
             questionItem.classList.add('selected-question');
         });
-
+        renderWithMathJax(questionItem)
         questionslist.appendChild(questionItem);
     });
 

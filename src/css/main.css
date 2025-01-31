@@ -8,3 +8,6 @@
 @import url('./normalize.css');
 @import url("./reset.css");
 @import url("./task.css");
+.condition {
+    white-space: pre-wrap;
+}

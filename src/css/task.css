@@ -1,8 +1,8 @@
 .match-table {
   position: absolute;
   border-collapse: collapse;
-  margin-top: 20px;
   text-align: center;
+  top: 275px;
   right: 10px;
 }
 .match-table th,
@@ -12,7 +12,17 @@
   background-color: transparent;
   font-size: 10px;
 }
-
+.task-picture{
+  width: auto;
+  height: 60px;
+  position: absolute;
+  top: 240px;
+  left: 160px;
+}
+.all-in-auestion{
+  display: flex;
+  align-items: center;
+}
 .match-table th {
   font-weight: bold;
 }
@@ -26,7 +36,18 @@
 .match-number-cell {
   font-weight: bold;
 }
-
+.send_svg {
+  width: 26px;
+  height: 26px;
+}
+.close-svg {
+  width: 20px;
+  height: 20px;
+}
+.delete-svg {
+  width: 17px;
+  height: 20px;
+}
 .task_bg {
   background-image: url(../img/task-bg-320.png);
   background-position: center;
@@ -34,10 +55,10 @@
   background-repeat: no-repeat;
 }
 .task {
-  margin-top: 172px;
+  margin-top: 180px;
 }
 .task-cont {
-  padding: 0 32px 241px 48px;
+  padding: 0 32px 201px 48px;
 }
 .question-input {
   background: transparent;
@@ -63,8 +84,8 @@
   font-weight: 400;
   margin-bottom: 5px;
 }
-.messages-list{
-  height:100px;
+.messages-list {
+  height: 200px;
   overflow: scroll;
 }
 .unchoosed {
@@ -82,18 +103,20 @@
 .option_cont {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 .chat-svg {
   width: 45px;
   height: 45px;
   position: absolute;
-  top: 390px;
+  top: 400px;
   left: 19px;
 }
 .option-button {
   color: #fff;
   font-size: 7px;
   font-weight: 400;
+  padding: 0;
   background-color: transparent;
 }
 .answer-list {
@@ -120,9 +143,12 @@
 }
 .question-elements {
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-between;
 }
 .match-question-item {
+  width: 170px;
   color: rgba(255, 255, 255, 1);
   font-size: 7px;
 }
@@ -139,51 +165,47 @@
 .module-menu {
   position: absolute;
   top: 50px;
-  left: 50px;
-  width: 200px;
+  left: 15px;
+  width: 250px;
+  height: 300px;
   background-color: #555555;
   border-radius: 50px;
   padding: 20px;
 }
-.delete-chat-btn{
-    background-color: rgba(180, 180, 180, 1);
-  border-radius: 4px;
-  opacity: 0.75;
-  color: rgba(68, 68, 68, 1);
-  font-size: 15px;
-  font-weight: 400;
-  padding: 3px 9.5px;
+.delete-chat-btn {
+  background-color: transparent;
+  padding: 0;
 }
-.delete-chat-btn:hover{
-    color: red;
-    border-color: red;
-    border:1px red solid ;
-    font-weight: 900;
-    background-color: transparent;
+.close-btn {
+  background-color: transparent;
+  padding: 0;
 }
-.close-btn{
-    background-color: transparent;
-    color:rgba(255, 255, 255, 1) ;
-    border: 1px solid rgba(255, 255, 255, 1);
-    margin-bottom: 10px;
-}
-.close-btn:hover{
-    color:rgba(68, 68, 68, 1) ;
-    background-color: rgba(255, 255, 255, 1);
+.close-delete-btns{
+  display: flex;
+  margin-bottom: 10px;
+  gap: 5px;
+  align-items: center;
 }
 .is-hidden {
-    display:none;
+  display: none;
 }
 .chat-answer {
   color: rgba(255, 255, 255, 1);
-  font-size: 15px;
-  margin-bottom: 10px;
+  font-size: 10px;
+  padding: 5px 3px 10px;
+  background-color: rgba(168, 168, 168, 1);
+  border-radius: 7px;
+  margin-bottom: 5px;
 }
 .user-messege {
   text-align: end;
+  width: 212px;
   color: rgba(255, 255, 255, 1);
-  font-size: 15px;
-  margin-bottom: 10px;
+  font-size: 10px;
+  padding: 5px;
+  background-color: rgba(209, 209, 209, 1);
+  border-radius: 7px;
+  margin:0 0 5px 58px;
 }
 .user-question {
   background-color: transparent;
@@ -193,6 +215,8 @@
   border-radius: 5px;
   color: rgba(255, 255, 255, 1);
   padding-left: 10px;
+  width: 224px;
+  height: 23px;
 }
 .user-question::placeholder {
   color: rgba(255, 255, 255, 1);
@@ -200,17 +224,17 @@
   padding-left: 10px;
 }
 .send-messege-btn {
-  background-color: rgba(180, 180, 180, 1);
-  border-radius: 4px;
-  opacity: 0.75;
-  color: rgba(68, 68, 68, 1);
-  font-size: 15px;
-  font-weight: 400;
-  padding: 3px 9.5px;
+  background-color: transparent;
+  padding: 0;
 }
 .send-messege-btn:hover {
   color: rgba(68, 68, 68, 1);
   opacity: 1;
+}
+.users-message{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
 }
 .finish-task {
   background-color: rgba(180, 180, 180, 1);
@@ -225,4 +249,307 @@
 .finish-task:hover {
   color: rgba(68, 68, 68, 1);
   opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .match-table {
+    height: 44px;
+    width: 44px;
+    top: 180px;
+    right: 100px;
+  }
+  .match-table th,
+  .match-table td {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 9px;
+    padding: 2px;
+  }
+
+  .match-table th {
+    font-weight: bold;
+  }
+
+  .match-radio {
+    transform: scale(1.2);
+    width: 8px;
+    height: 8px;
+  }
+
+  .match-number-cell {
+    font-weight: bold;
+  }
+  .task_bg {
+    background-image: url(../img/task-bg-1440.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .task {
+    margin-top: 90px;
+  }
+  .task-cont {
+    padding: 0 132px 140px 105px;
+  }
+  .question-input {
+    width: 240px;
+    height: 18px;
+  }
+  .question-input::placeholder {
+    color: #fff;
+    padding-left: 10px;
+  }
+  .condition {
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+  .help-text {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 11px;
+  }
+  .messages-list {
+    height: 175px;
+    overflow: scroll;
+    margin-bottom: 10px;
+  }
+  .unchoosed {
+    background-color: rgba(68, 68, 68, 1);
+    border-radius: 10000000px;
+    width: 10px;
+    height: 10px;
+  }
+  .choosen {
+    background-color: #bebebe;
+    border-radius: 10000000px;
+    width: 10px;
+    height: 10px;
+  }
+  .option_cont {
+    display: flex;
+    align-items: center;
+  }
+  .chat-svg {
+    width: 51px;
+    height: 51px;
+    top: 308px;
+    left: 33px;
+  }
+  .option-button {
+    color: #fff;
+    font-size: 9px;
+  }
+  .answer-list {
+    display: flex;
+    flex-direction: column;
+    li:nth-child(1)::before {
+      content: 'A. ';
+    }
+    li:nth-child(2)::before {
+      content: 'Б. ';
+    }
+    li:nth-child(3)::before {
+      content: 'В. ';
+    }
+    li:nth-child(4)::before {
+      content: 'Г. ';
+    }
+    li:nth-child(5)::before {
+      content: 'Д. ';
+    }
+  }
+  .questions-list {
+    list-style: decimal;
+  }
+  .question-elements {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  .match-question-item {
+    width: auto;
+    color: rgba(255, 255, 255, 1);
+    font-size: 9px;
+  }
+  .match-question-item + .match-question-item {
+    margin-top: 3px;
+  }
+  .match-title {
+    width: 131px;
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+  .module-menu {
+    width: 280px;
+    height: 250px;
+    padding: 25px;
+  }
+  .finish-task {
+    font-size: 10px;
+    margin-left: 400px;
+  }
+  .finish-task:hover {
+    color: rgba(68, 68, 68, 1);
+    opacity: 1;
+  }
+  .user-question {
+    margin-bottom: 0;
+  }
+  .task-picture{
+    position: absolute;
+    height: 100px;
+    top: 155px;
+    left: 290px;
+  }
+  .all-in-auestion{
+    display: block;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .match-table {
+    height: 80px;
+    width: 80px;
+    top: 350px;
+    right: 130px;
+  }
+  .match-table th,
+  .match-table td {
+    font-size: 17px;
+    padding: 5px;
+  }
+  .match-radio {
+    transform: scale(1.2);
+    width: 10px;
+    height: 10px;
+  }
+  .task {
+    margin-top: 212px;
+  }
+  .task-cont {
+    padding: 0 239px 329px 198px;
+  }
+  .question-input {
+    width: 393px;
+    height: 29px;
+  }
+  .question-input::placeholder {
+    color: #fff;
+    padding-left: 10px;
+  }
+  .condition {
+    font-size: 22px;
+    margin-bottom:11px;
+  }
+  .help-text {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 11px;
+  }
+  .messages-list {
+    height:350px;
+    margin-bottom: 10px;
+  }
+  .unchoosed {
+    width: 14px;
+    height: 14px;
+  }
+  .choosen {
+    width: 14px;
+    height: 14px;
+  }
+  .option_cont {
+    display: flex;
+    align-items: center;
+  }
+  .chat-svg {
+    width: 93px;
+    height: 93px;
+    top: 625px;
+    left: 40px;
+  }
+  .option-button {
+    color: #fff;
+    font-size: 15px;
+  }
+  .question-elements {
+    display: flex;
+    
+    margin-bottom: 10px;
+  }
+  .match-question-item {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+  }
+  .match-question-item + .match-question-item {
+    margin-top: 7px;
+  }
+  .match-title {
+    width: 248px;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .module-menu {
+    width: 280px;
+    height: 250px;
+    padding: 25px;
+  }
+  .finish-task {
+    font-size: 15px;
+    margin-left: 800px;
+    padding: 8px 10px;
+  }
+  .finish-task:hover {
+    color: rgba(68, 68, 68, 1);
+    opacity: 1;
+  }
+  .send_svg {
+    width: 40px;
+    height: 40px;
+  }
+  .close-svg {
+    width: 32px;
+    height: 32px;
+  }
+  .delete-svg {
+    width: 24px;
+    height: 27px;
+  }
+  .chat-answer {
+    font-size: 14px;
+    padding: 10px 8px 16px;
+    background-color: rgba(168, 168, 168, 1);
+    border-radius: 7px;
+    margin-bottom: 5px;
+  }
+  .module-menu {
+    position: absolute;
+    top: 225px;
+    left: 15px;
+    width: 500px;
+    height: 457px;
+    background-color: #555555;
+    border-radius: 50px;
+    padding: 20px;
+  }
+  .user-messege{
+    text-align: end;
+    width: 374px;
+    font-size: 14px;
+    border-radius: 7px;
+    margin:0 0 5px 115px;
+  }
+  .user-question {
+    padding-left: 10px;
+    width: 393px;
+    height: 29px;
+  }
+  .task-picture{
+    position: absolute;
+    height: 180px;
+    top: 325px;
+    left: 475px;
+  }
+  .all-in-auestion{
+    display: block;
+  }
 }

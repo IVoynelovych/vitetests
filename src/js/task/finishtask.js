@@ -5,11 +5,9 @@ export function finishTask() {
       localStorage.getItem('type'),
       localStorage.getItem('selectedOption')
     );
-  
     let accessToken = localStorage.getItem('token');
     let type = localStorage.getItem('type');
     let body;
-  
     switch (type) {
       case 'options':
         body = JSON.stringify({
@@ -47,7 +45,6 @@ export function finishTask() {
         console.error('Unknown task type:', type);
         return;
     }
-  
     return fetch(`${url}answers`, {
       method: 'POST',
       headers: {
@@ -64,7 +61,14 @@ export function finishTask() {
         return response.json();
       })
       .then(data => {
-        console.log( data);
+        if(data.score === data.maxScore || data.taskResults.score === data.maxScore){
+          alert(`Вітаємо ви вирішили правильно і отримали ${data.maxScore}`)
+          localStorage.setItem('selectedOption', '')
+        }
+        else{
+          alert(`Нажаль ви вирішили не вірно, спробуйте ще раз`)
+        }
+        console.log(data);
       })
       .catch(error => {
         console.error(error);
