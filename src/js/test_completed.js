@@ -11,7 +11,6 @@ export function Test_progress(topicId) {
       },
     })
       .then(response => {
-        console.log(`API: ${url}progress/test/${topicId}`);
         if (response.status === 404) {
           return 0;
         }
@@ -23,9 +22,7 @@ export function Test_progress(topicId) {
         return response.json();
       })
       .then(data => {
-        // console.log(` Прогрес теста по темі ${topicId}:`, data);
-        console.log(data)
-        return data.maxScore;
+        return data.completed;
         
       })
       .catch(error => {

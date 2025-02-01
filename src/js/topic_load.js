@@ -56,10 +56,9 @@ export async function load_topics() {
 
         if (i > 0) {
           let prevTopicId = data.result[i - 1]._id;
-          console.log(prevTopicId)
           try {
             let progress = await Test_progress(prevTopicId);
-            if (progress == undefined) {
+            if (progress == false || progress == undefined) {
               listItem.style.opacity = '0.5';
               listItem.style.pointerEvents = 'none';
             }

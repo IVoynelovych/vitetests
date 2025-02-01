@@ -63,6 +63,7 @@
 .question-input {
   background: transparent;
   border: 1px solid #fff;
+  font-size: 11px;
   width: 150px;
   height: 12px;
   color: #fff;
@@ -292,6 +293,7 @@
   }
   .question-input {
     width: 240px;
+    font-size: 16px;
     height: 18px;
   }
   .question-input::placeholder {
@@ -431,6 +433,7 @@
   .question-input {
     width: 393px;
     height: 29px;
+    font-size: 22px;
   }
   .question-input::placeholder {
     color: #fff;

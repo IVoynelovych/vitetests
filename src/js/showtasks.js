@@ -5,8 +5,6 @@ import { renderWithMathJax } from './task/render';
 test.style.cursor = 'pointer';
 export function showTaskById(topicId, dropdown, topicname) {
   let accessToken = localStorage.getItem('token');
-  let topic_prog = localStorage.getItem('completedTasks');
-  console.log(topic_prog)
   return fetch(`${url}topic/tasks/${topicId}`, {
     method: 'GET',
     headers: {
@@ -38,10 +36,12 @@ export function showTaskById(topicId, dropdown, topicname) {
       const test = document.createElement('li');
       test.textContent = `Тест з теми ${topicname}`;
       test.setAttribute('topicId', topicId);
-      Topic_progress(topicId)
-      if (topic_prog < 1) {
-        test.classList.add('disablade');
-      }
+      Topic_progress(topicId).then(topic_prog => {
+        if (topic_prog == 0 || topic_prog == undefined) {
+          console.log(12);
+          test.classList.add('disablade');
+        }
+      });
       test.addEventListener('click', () => {
         localStorage.setItem('topic', topicId);
         window.location.href = 'test.html';

@@ -8,9 +8,11 @@ import { renderWithMathJax } from "../task/render";
 export function renderTask(data, index) {
     optionsContainer.innerHTML = '';  
     const task = data[index]; 
-    localStorage.setItem('taskId', task._id)
-
+    let usAns = JSON.parse(localStorage.getItem('userTestAnswers')) || [];
+    
+    localStorage.setItem('taskId', task._id);
     condition.innerHTML = task.condition;   
+
     const existingPic = container.querySelector('.task-picture');
     if (existingPic) {
         existingPic.remove();
@@ -24,6 +26,7 @@ export function renderTask(data, index) {
 
     renderWithMathJax(condition);
     taskType(task);
+
     const existingNavContainer = test_cont.querySelector('.nav-buttons');
     if (existingNavContainer) {
         test_cont.removeChild(existingNavContainer);
@@ -35,17 +38,20 @@ export function renderTask(data, index) {
         const nav_btn = document.createElement('button');
         nav_btn.classList.add('nav-button_test');
         nav_btn.setAttribute('index', i);
-        navContainer.appendChild(nav_btn);
+        if (usAns.some(answer => answer._id === item._id)) {
+            nav_btn.classList.add('completed'); 
+        }
         if (i === index) {
             nav_btn.classList.add('active');
         }
         nav_btn.addEventListener('click', () => {
-            const allNavButtons = navContainer.querySelectorAll('.nav-button_test');
-            allNavButtons.forEach(button => button.classList.remove('active'));
+            document.querySelectorAll('.nav-button_test').forEach(button => button.classList.remove('active'));
             nav_btn.classList.add('active');
             changeTask(i);
         });
+        navContainer.appendChild(nav_btn);
     });
 
     test_cont.appendChild(navContainer);
 }
+

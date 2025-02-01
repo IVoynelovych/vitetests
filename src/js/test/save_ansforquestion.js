@@ -1,10 +1,4 @@
 export function finishTestTask() {
-    console.log(
-        localStorage.getItem('taskId'),
-        localStorage.getItem('type'),
-        localStorage.getItem('selectedOption')
-    );
-
     let type = localStorage.getItem('type');
     let taskId = localStorage.getItem('taskId');
     let newAnswer = null;  
@@ -20,6 +14,7 @@ export function finishTestTask() {
 
         case 'input':
             const input = document.querySelector('.question-input');
+            if (!input) return;
             newAnswer = {
                 answer: input.value.trim(),
                 _id: taskId,
@@ -29,9 +24,7 @@ export function finishTestTask() {
 
         case 'match':
             let answers = localStorage.getItem('answers');
-            if (!answers) {
-                return;
-            }
+            if (!answers) return;
             newAnswer = {
                 answer: JSON.parse(answers), 
                 _id: taskId,
@@ -44,8 +37,7 @@ export function finishTestTask() {
             return;
     }
 
-    let storedAnswers = localStorage.getItem('userTestAnswers');
-    storedAnswers = storedAnswers ? JSON.parse(storedAnswers) : [];
+    let storedAnswers = JSON.parse(localStorage.getItem('userTestAnswers')) || [];
     let existingIndex = storedAnswers.findIndex(answer => answer._id === taskId);
     
     if (existingIndex !== -1) {
@@ -55,6 +47,10 @@ export function finishTestTask() {
     }
 
     localStorage.setItem('userTestAnswers', JSON.stringify(storedAnswers));
+    let nav_btn = document.querySelector(`.nav-button_test[index="${storedAnswers.length - 1}"]`);
+    if (nav_btn) {
+        nav_btn.classList.add('completed');
+    }
 
-    console.log(storedAnswers);
+    console.log('Ответ сохранен:', storedAnswers);
 }

@@ -3,12 +3,17 @@
     flex-direction: column;
     gap: 5px;
 }
+
 .nav-button_test{
     border-radius: 8px;
   background: #444;
   padding: 4px 0;
   width: 10px;
   height: 10px;
+}
+.completed{
+    background-color: rgb(20, 105, 77);
+    opacity: 0.7;
 }
 .test_cont{
     display: flex;
@@ -17,7 +22,8 @@
     gap: 20px;
 }
 .active{
-    background-color: aliceblue;
+    background-color: aliceblue;  
+    border: 1px black solid;
 }
 .finish-test{
 font-size: 13px;

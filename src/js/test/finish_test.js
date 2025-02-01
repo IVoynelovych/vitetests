@@ -35,7 +35,8 @@ export function finishTest() {
             alert(`Ви пройшли і отримали ${data.score} з ${data.possibleScore}`)
             localStorage.setItem('userTestAnswers', '')
         }
-        console.log("Відповідь сервера:", data);
+        localStorage.setItem('currentTaskIndex', '0')
+        console.log(window.location = '/topics.html')
     })
     .catch(error => {
         console.error("Помилка запиту:", error);

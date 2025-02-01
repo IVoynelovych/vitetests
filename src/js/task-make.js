@@ -32,7 +32,6 @@ export function GetTask() {
         conteiner.appendChild(pic)
       }
       localStorage.setItem('condition',data.condition )
-      console.log(data)
       taskType(data);
       renderWithMathJax(condition); 
       return data;

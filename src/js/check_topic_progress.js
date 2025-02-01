@@ -16,16 +16,16 @@ export function Topic_progress(topicId) {
         if (!response.ok) {
           throw new Error(`HTTP Error: ${response.status}`);
         }
-  
+    
         return response.json();
       })
       .then(data => {
-        localStorage.setItem('completedTasks', data.completedTasks)
-        return
-        }
-      )
+        localStorage.setItem('completedTasks', data.completedTasks);
+        return data.completedTasks; 
+      })
       .catch(error => {
         console.error('Помилка при отриманні прогресу :', error);
         return 0;
       });
+    
   }

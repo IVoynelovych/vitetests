@@ -1,5 +1,4 @@
 export function changeacc() {
-  console.log(123)
     const account_btn = document.querySelector('.nav-button');
     const account_status = localStorage.getItem('account_status') === 'true';
     if (account_btn) {
