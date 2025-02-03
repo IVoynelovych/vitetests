@@ -15,7 +15,7 @@ const message_send = document.querySelector('.send-messege-btn');
 const finish_test = document.querySelector('.finish-test')
 chat_btn.addEventListener('click', () => {
   toggleMenu();
-  if (localStorage.getItem('isChatExist') == 'false') {
+  if (localStorage.getItem('isChatExist') == 'false' || localStorage.getItem('isChatExist')==null) {
     create_chat();
   }
 });

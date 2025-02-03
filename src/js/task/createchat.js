@@ -1,5 +1,6 @@
 const url = 'https://harry-potter-test-preparation-backend.onrender.com/';
 const messages_list = document.querySelector('.messages-list');
+import { openchat } from "./chat";
 export function create_chat() {
   let accessToken = localStorage.getItem('token');
   fetch(`${url}ai-chat/`, {
@@ -31,5 +32,6 @@ export function create_chat() {
     .catch(error => {
       alert('Помилка');
       console.error('Помилка :', error);
+      openchat()
     });
 }

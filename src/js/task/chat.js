@@ -18,6 +18,7 @@ export function openchat() {
       return response.json();
     })
     .then(data => {
+      localStorage.setItem('isChatExist', true)
       console.log('Результат:', data);
       data.messages.forEach(messages => {
         const message = document.createElement("li")
