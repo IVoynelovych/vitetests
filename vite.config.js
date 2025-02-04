@@ -16,14 +16,12 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        
         main: resolve(__dirname, 'src/index.html'),
         topics: resolve(__dirname, 'src/topics.html'),
         account: resolve(__dirname, 'src/account.html'),
         registration: resolve(__dirname, 'src/registration.html'),
         task: resolve(__dirname,'src/task.html'),
         test: resolve(__dirname,'src/test.html')
-
       },
     },
     outDir: '../dist',
