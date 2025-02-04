@@ -30,6 +30,9 @@
   height: 300px;
   overflow:scroll;
 }
+.topics_list::-webkit-scrollbar {
+  display: none; 
+}
 .topics_list_item {
   color: #fff;
   font-size: 12px;

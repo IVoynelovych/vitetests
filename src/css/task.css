@@ -89,6 +89,9 @@
   height: 200px;
   overflow: scroll;
 }
+.messages-list::-webkit-scrollbar {
+  display: none; 
+}
 .unchoosed {
   background-color: rgba(68, 68, 68, 1);
   border-radius: 10000000px;
