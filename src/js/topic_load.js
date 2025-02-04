@@ -109,6 +109,7 @@ export async function load_topics() {
     loader.remove();
     alert('Помилка завантаження');
     console.error('Помилка завантаження:', error);
+    window.location.href = 'registration.html';
   }
 }
 

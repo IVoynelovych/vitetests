@@ -64,7 +64,7 @@ export function finishTask() {
         if(data.score === data.maxScore || data.taskResults.score === data.maxScore){
           alert(`Вітаємо ви вирішили правильно і отримали ${data.maxScore}`)
           localStorage.setItem('selectedOption', '')
-          console.log(window.location.href = 'topics.html')
+          window.location.href = 'topics.html'
         }
         else{
           alert(`Нажаль ви вирішили не вірно, спробуйте ще раз`)

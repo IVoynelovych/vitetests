@@ -54,6 +54,7 @@ export function showTaskById(topicId, dropdown, topicname) {
       dropdown.style.display = 'block';
     })
     .catch(error => {
+      
       console.error('Error fetching task details:', error);
       dropdown.style.display = 'none';
     });
