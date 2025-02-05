@@ -18,20 +18,25 @@ export function openchat() {
       return response.json();
     })
     .then(data => {
-      localStorage.setItem('isChatExist', true)
+      localStorage.setItem('isChatExist', true);
       console.log('Результат:', data);
+    
       data.messages.forEach(messages => {
-        const message = document.createElement("li")
-        if(messages.role == 'assistant'){
-            message.classList.add('chat-answer')            
+        if (!messages.content.trim()){
+          console.log(123)
+        };
+    
+        const message = document.createElement("li");
+        if (messages.role == 'assistant') {
+          message.classList.add('chat-answer');
+        } else if (messages.role == 'user') {
+          message.classList.add('user-messеge'); 
         }
-        else if(messages.role == 'user'){
-            message.classList.add('user-messege')
-        }
-        message.innerHTML = messages.content 
-        messages_list.append(message)
+        message.innerHTML = messages.content;
+        messages_list.append(message);
       });
     })
+    
     .catch(error => {
       alert('Помилка');
       console.error('Помилка :', error);

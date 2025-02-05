@@ -16,11 +16,14 @@ export function finishTask() {
           type: type,
         });
         break;
-  
       case 'input':
         const input = document.querySelector('.question-input');
+        let input_val = input.value.trim()
+        if (input.value.length==0){
+          input_val = ' '
+        }
         body = JSON.stringify({
-          answer: input.value.trim(),
+          answer: input_val,
           _id: localStorage.getItem('taskId'),
           type: type,
         });
@@ -61,13 +64,14 @@ export function finishTask() {
         return response.json();
       })
       .then(data => {
-        if(data.score === data.maxScore || data.taskResults.score === data.maxScore){
+        console.log(data)
+        if(data.score === data.possibleScore){
           alert(`Вітаємо ви вирішили правильно і отримали ${data.maxScore}`)
           localStorage.setItem('selectedOption', '')
           window.location.href = 'topics.html'
         }
         else{
-          alert(`Нажаль ви вирішили не вірно, спробуйте ще раз`)
+          alert(`Нажаль ви вирішили не вірно, спробуйте ще раз, адже ви отримали ${data.score} з ${data.possibleScore}`)
         }
         console.log(data);
       })

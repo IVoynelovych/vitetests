@@ -7,13 +7,11 @@ export function taskType(data) {
     localStorage.setItem('type', data.type)
     const savedChoice = localStorage.getItem('selectedOption');
     data.options.forEach(option => {
-        const containerOption = document.createElement('div');
+        const containerOption = document.createElement('label');
         containerOption.classList.add('option_cont');
-
         const optionElement = document.createElement('button');
         const optionCheck = document.createElement('div');
         optionCheck.classList.add('unchoosed');
-
         optionElement.classList.add('option-button');
         optionElement.textContent = option.name;
         renderWithMathJax(optionElement)

@@ -8,6 +8,10 @@ export function login() {
     email: email_input.value.trim(),
     password: password_input.value.trim(),
   };
+  if(registration_data.password.length<6){
+    alert('Пароль має складатись мінімум з 6 символів')
+    return
+  }
   fetch(`${url}auth/signin`, {
     method: 'POST',
     headers: {

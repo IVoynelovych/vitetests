@@ -12,6 +12,10 @@ export function registration() {
     lastName: user_surname,
     password: password_input.value.trim(),
   };
+  if(registration_data.password.length<6){
+    alert('Пароль має складатись мінімум з 6 символів')
+    return
+  }
   fetch(`${url}auth/signup`, {
     method: 'POST',
     headers: {
@@ -34,8 +38,8 @@ export function registration() {
       window.location.href = 'account.html';  
     })
     .catch(error =>{ 
-      alert('Помилка реєстрації')
-      console.error('Помилка реєстрації:', error)}); 
+      alert('Помилка реєстраціїю Перевірте заповнення полей')
+      console.error('Помилка реєстрації: ', error)}); 
        
 }
 export const root_reg = {
