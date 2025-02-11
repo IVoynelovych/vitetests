@@ -64,9 +64,8 @@ export function finishTask() {
         return response.json();
       })
       .then(data => {
-        console.log(data)
         if(data.score === data.possibleScore){
-          alert(`Вітаємо ви вирішили правильно і отримали ${data.maxScore}`)
+          alert(`Вітаємо ви вирішили правильно і отримали ${data.possibleScore}`)
           localStorage.setItem('selectedOption', '')
           window.location.href = 'topics.html'
         }

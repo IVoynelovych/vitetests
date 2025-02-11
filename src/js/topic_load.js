@@ -64,6 +64,7 @@ export async function load_topics() {
             }
           } catch (error) {
             console.error('Помилка отримання прогресу:', error);
+            window.location.href='registration.html'
           }
         }
 
