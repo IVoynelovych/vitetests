@@ -38,7 +38,6 @@ export function showTaskById(topicId, dropdown, topicname) {
       test.setAttribute('topicId', topicId);
       Topic_progress(topicId).then(topic_prog => {
         if (topic_prog == 0 || topic_prog == undefined) {
-          console.log(12);
           test.classList.add('disablade');
         }
       });

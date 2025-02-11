@@ -23,7 +23,7 @@ export function openchat() {
     
       data.messages.forEach(messages => {
         if (!messages.content.trim()){
-          console.log(123)
+          return
         };
     
         const message = document.createElement("li");

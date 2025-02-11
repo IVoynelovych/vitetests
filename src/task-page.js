@@ -30,6 +30,7 @@ message_send.addEventListener('click', () => {
   send_message();
 });
 close_modal.addEventListener('click', () => {
+  delete_chat();
   toggleMenu();
 });
 window.addEventListener('load', () => {

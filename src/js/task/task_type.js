@@ -126,7 +126,6 @@ export function taskType(data) {
     const matchTable = createMatchTable(data);
     optionsContainer.appendChild(matchTable);
 
-    console.log(data);
 }
 
 

@@ -21,11 +21,9 @@ export function renderWithMathJax(element) {
         if (typeof MathJax !== 'undefined') {
             MathJax.Hub.Queue(['Typeset', MathJax.Hub, element]);
         } else {
-            console.log("MathJax не найден, повторная попытка...");
             setTimeout(() => renderWithMathJax(element), 100);
         }
     } else {
-        console.log('Content is empty, retrying...');
         setTimeout(() => renderWithMathJax(element), 100);
     }
 }

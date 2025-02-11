@@ -51,6 +51,4 @@ export function finishTestTask() {
     if (nav_btn) {
         nav_btn.classList.add('completed');
     }
-
-    console.log('Ответ сохранен:', storedAnswers);
 }

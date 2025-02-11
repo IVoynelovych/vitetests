@@ -48,7 +48,6 @@ export function send_message() {
         console.error('Помилка:', error);
     })
     .finally(() => {
-        console.log("Запит завершен.");
         progress = false; 
     });
 }

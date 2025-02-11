@@ -34,10 +34,12 @@ export async function load_topics() {
     }
 
     const data = await response.json();
+    console.log(data)
     if (!data.result || data.result.length === 0) {
       console.warn("Немає доступних тем.");
       loader.remove();
       return;
+
     }
     let listItems = [];
 

@@ -18,7 +18,6 @@ export function create_chat() {
       return response.json();
     })
     .then(data => {
-      console.log('Результат:', data);
       data.messages.forEach(messages => {
         const message = document.createElement('li');
         if (messages.role == 'assistant') {

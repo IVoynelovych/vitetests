@@ -11,7 +11,6 @@ logout_btn.addEventListener('click', () => {
 });
 function account() {
   let accessToken = localStorage.getItem('token');
-  console.log(accessToken);
   fetch(`${url}auth/getInfo`, {
     method: 'GET',
     headers: {
@@ -28,7 +27,6 @@ function account() {
       return response.json();
     })
     .then(data => {
-      console.log(data);
       progressBar.style.width = `${data.user.progress * 100}%`;
       user_ava.setAttribute('src', data.user.avatar);
       user_name.innerHTML = `${data.user.lastName} ${data.user.firstName}`;

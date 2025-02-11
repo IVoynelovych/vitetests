@@ -6,8 +6,6 @@ export function finishTest() {
     const answers = JSON.parse(storedAnswers); 
     const requestBody = { userAnswers: answers };
     let body = JSON.stringify(requestBody)
-    console.log(JSON.stringify(requestBody));
-    console.log(body)
     return fetch(`${url}answers/${topicId}`, {  
         method: 'POST',
         headers: {
@@ -25,18 +23,18 @@ export function finishTest() {
     .then(data => {
         if(data.score == 0 ){
             alert('Нажаль ви набрали 0 балів повторіть тему і спробуйте ще раз')
-            localStorage.setItem('userTestAnswers', '')
+            localStorage.setItem('userTestAnswers', JSON.stringify([]));
         }
         else if(data.score == data.possibleScore){
             alert('Вітаємо ви виконали тест ідеально')
-            localStorage.setItem('userTestAnswers', '')
+            localStorage.setItem('userTestAnswers', JSON.stringify([]));
         }
         else if(data.score < data.possibleScore){
             alert(`Ви пройшли і отримали ${data.score} з ${data.possibleScore}`)
-            localStorage.setItem('userTestAnswers', '')
+            localStorage.setItem('userTestAnswers', JSON.stringify([]));
         }
         localStorage.setItem('currentTaskIndex', '0')
-        console.log(window.location = '/topics.html')
+        window.location.href = '/topics.html'
     })
     .catch(error => {
         console.error("Помилка запиту:", error);
